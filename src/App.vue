@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{$t('food')}}{{$t('guide')}}</h1>
+    <dashboard />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Dashboard from './components/Dashboard.vue'
+import './assets/css/dianzan/iconfont.css'
+import './assets/css/expressionless/iconfont.css'
+import './assets/css/menu/iconfont.css'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+      Dashboard
   }
 }
 </script>
@@ -23,6 +26,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 </style>
